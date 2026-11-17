@@ -11,9 +11,11 @@ h1 { line-height: 1.15; font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: .5re
 .holiday-section { margin: 2rem 0; }
 .holiday-section button { font: inherit; padding: .6rem 1rem; border: 1px solid currentColor; border-radius: .5rem; background: transparent; cursor: pointer; }
 .holiday-section button:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
-.holiday-tabs { display: flex; gap: .5rem; margin-top: 1.25rem; }
-.holiday-tabs [aria-selected="true"] { color: Canvas; background: CanvasText; }
+.holiday-year { margin: 1rem 0; }
 .holiday-year-panel { margin-top: 1rem; }
+.holiday-filter { margin: 1rem 0; padding: .5rem .75rem; border: 1px solid currentColor; border-radius: .5rem; }
+.holiday-filter label { margin-right: 1rem; }
+.holiday-year-panel .small { margin: .5rem 0; }
 .holiday-table-wrap { overflow-x: auto; }
 .holiday-table { width: 100%; min-width: 720px; border-collapse: collapse; text-align: left; }
 .holiday-table caption { padding: .5rem 0; font-weight: 600; text-align: left; }

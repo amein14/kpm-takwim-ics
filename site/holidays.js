@@ -1,15 +1,11 @@
 "use strict";
 
-const toggle = document.querySelector("#holiday-toggle");
-const panel = document.querySelector("#holiday-list");
+const toggle2026 = document.querySelector("#holiday-toggle-2026");
+const panel2026 = document.querySelector("#holiday-panel-2026");
+const toggle2027 = document.querySelector("#holiday-toggle-2027");
+const panel2027 = document.querySelector("#holiday-panel-2027");
 const status = document.querySelector("#holiday-status");
 const items = document.querySelector("#holiday-items");
-const yearTabs = [...document.querySelectorAll('[role="tab"]')];
-const yearPanels = {
-  "2026": document.querySelector("#holiday-panel-2026"),
-  "2027": document.querySelector("#holiday-panel-2027"),
-};
-let activeYear = "2026";
 let loadPromise;
 
 const kindLabels = {
@@ -62,6 +58,7 @@ function renderHoliday(event) {
   }
 
   const item = document.createElement("tr");
+  item.dataset.groups = event.applicable_groups.join(" ");
   const dates = document.createElement("td");
   dates.className = "holiday-dates";
   dates.textContent = event.start_date === event.end_date
@@ -146,66 +143,52 @@ async function loadHolidays() {
     tableWrap.className = "holiday-table-wrap";
     tableWrap.append(table);
     items.replaceChildren(tableWrap);
-    status.textContent = `${data.events.length} validated holiday and school-break entries for 2026.`;
+    filterHolidayRows();
   } catch (error) {
     console.error("Could not load the KPM holiday list.", error);
     status.textContent = "The holiday list could not be loaded. Please try again later.";
   }
 }
 
-function selectYear(year, moveFocus = false) {
-  activeYear = year;
-  for (const tab of yearTabs) {
-    const selected = tab.id === `holiday-tab-${year}`;
-    tab.setAttribute("aria-selected", String(selected));
-    tab.tabIndex = selected ? 0 : -1;
-    if (selected && moveFocus) {
-      tab.focus();
+function filterHolidayRows() {
+  const selectedGroup = document.querySelector('input[name="holiday-group"]:checked').value;
+  const rows = items.querySelectorAll("tbody tr");
+  let visibleCount = 0;
+  for (const row of rows) {
+    const appliesToGroup = row.dataset.groups.split(" ").includes(selectedGroup);
+    row.hidden = !appliesToGroup;
+    if (appliesToGroup) {
+      visibleCount += 1;
     }
   }
-  for (const [tabYear, yearPanel] of Object.entries(yearPanels)) {
-    yearPanel.hidden = tabYear !== year;
-  }
-  toggle.textContent = `${panel.hidden ? "Show" : "Hide"} ${year} extracted school holidays`;
+  status.textContent = `Showing ${visibleCount} validated holiday and school-break entries for 2026 — Group ${selectedGroup}.`;
 }
 
-for (const tab of yearTabs) {
-  tab.addEventListener("click", () => {
-    selectYear(tab.id.slice("holiday-tab-".length));
-  });
-  tab.addEventListener("keydown", (event) => {
-    const currentIndex = yearTabs.indexOf(tab);
-    let nextIndex;
-    if (event.key === "ArrowRight") {
-      nextIndex = (currentIndex + 1) % yearTabs.length;
-    } else if (event.key === "ArrowLeft") {
-      nextIndex = (currentIndex - 1 + yearTabs.length) % yearTabs.length;
-    } else if (event.key === "Home") {
-      nextIndex = 0;
-    } else if (event.key === "End") {
-      nextIndex = yearTabs.length - 1;
-    }
-    if (nextIndex !== undefined) {
-      event.preventDefault();
-      selectYear(yearTabs[nextIndex].id.slice("holiday-tab-".length), true);
-    }
-  });
+for (const radio of document.querySelectorAll('input[name="holiday-group"]')) {
+  radio.addEventListener("change", filterHolidayRows);
 }
 
-toggle.addEventListener("click", async () => {
-  const show = toggle.getAttribute("aria-expanded") !== "true";
-  toggle.setAttribute("aria-expanded", String(show));
+function togglePanel(button, panel, year) {
+  const show = button.getAttribute("aria-expanded") !== "true";
+  button.setAttribute("aria-expanded", String(show));
   panel.hidden = !show;
-  selectYear(activeYear);
+  button.textContent = `${show ? "Hide" : "Show"} ${year} school holidays`;
+  return show;
+}
+
+toggle2026.addEventListener("click", async () => {
+  const show = togglePanel(toggle2026, panel2026, "2026");
   if (show) {
-    if (activeYear === "2026" && !loadPromise) {
+    if (!loadPromise) {
       loadPromise = loadHolidays();
     }
-    if (activeYear === "2026") {
-      await loadPromise;
-    }
+    await loadPromise;
     if (status.textContent.startsWith("The holiday list could not be loaded.")) {
       loadPromise = undefined;
     }
   }
+});
+
+toggle2027.addEventListener("click", () => {
+  togglePanel(toggle2027, panel2027, "2027");
 });
