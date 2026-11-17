@@ -4,6 +4,12 @@ const toggle = document.querySelector("#holiday-toggle");
 const panel = document.querySelector("#holiday-list");
 const status = document.querySelector("#holiday-status");
 const items = document.querySelector("#holiday-items");
+const yearTabs = [...document.querySelectorAll('[role="tab"]')];
+const yearPanels = {
+  "2026": document.querySelector("#holiday-panel-2026"),
+  "2027": document.querySelector("#holiday-panel-2027"),
+};
+let activeYear = "2026";
 let loadPromise;
 
 const kindLabels = {
@@ -55,41 +61,47 @@ function renderHoliday(event) {
     throw new Error("The holiday list contains an invalid event.");
   }
 
-  const item = document.createElement("li");
-  const title = document.createElement("h3");
-  title.textContent = event.title;
-  item.append(title);
-
-  const kind = document.createElement("p");
-  kind.textContent = kindLabels[event.kind];
-  item.append(kind);
-
-  const dates = document.createElement("p");
+  const item = document.createElement("tr");
+  const dates = document.createElement("td");
   dates.className = "holiday-dates";
   dates.textContent = event.start_date === event.end_date
     ? formatDate(event.start_date)
     : `${formatDate(event.start_date)} – ${formatDate(event.end_date)}`;
   item.append(dates);
 
+  const title = document.createElement("th");
+  title.scope = "row";
+  title.textContent = event.title;
+  item.append(title);
+
+  const kind = document.createElement("td");
+  kind.textContent = kindLabels[event.kind];
+  item.append(kind);
+
+  const applicabilityCell = document.createElement("td");
   const scope = document.createElement("p");
   scope.textContent = applicability(event);
-  item.append(scope);
+  applicabilityCell.append(scope);
 
   if (event.source_note) {
     const note = document.createElement("p");
     note.textContent = `KPM note: ${event.source_note}`;
-    item.append(note);
+    applicabilityCell.append(note);
   }
+  item.append(applicabilityCell);
 
   const sourceUrl = new URL(event.source_url, window.location.href);
   if (sourceUrl.protocol !== "https:" || sourceUrl.hostname !== "www.moe.gov.my") {
     throw new Error("The holiday list contains a non-KPM source URL.");
   }
+  const sourceCell = document.createElement("td");
   const source = document.createElement("a");
   source.href = sourceUrl.href;
   source.rel = "noopener";
   source.textContent = `Official KPM source (PDF, page ${event.page_number})`;
-  item.append(source);
+  sourceCell.className = "holiday-source";
+  sourceCell.append(source);
+  item.append(sourceCell);
   return item;
 }
 
@@ -108,12 +120,32 @@ async function loadHolidays() {
     ) {
       throw new Error("The published holiday list has an unexpected format.");
     }
-    const list = document.createElement("ol");
-    list.className = "holiday-list";
-    for (const event of data.events) {
-      list.append(renderHoliday(event));
+    const table = document.createElement("table");
+    table.className = "holiday-table";
+    const caption = document.createElement("caption");
+    caption.textContent = "Validated 2026 school holidays and breaks";
+    table.append(caption);
+
+    const head = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+    for (const label of ["Date", "Holiday", "Type", "Applies to", "Source"]) {
+      const heading = document.createElement("th");
+      heading.scope = "col";
+      heading.textContent = label;
+      headerRow.append(heading);
     }
-    items.replaceChildren(list);
+    head.append(headerRow);
+    table.append(head);
+
+    const body = document.createElement("tbody");
+    for (const event of data.events) {
+      body.append(renderHoliday(event));
+    }
+    table.append(body);
+    const tableWrap = document.createElement("div");
+    tableWrap.className = "holiday-table-wrap";
+    tableWrap.append(table);
+    items.replaceChildren(tableWrap);
     status.textContent = `${data.events.length} validated holiday and school-break entries for 2026.`;
   } catch (error) {
     console.error("Could not load the KPM holiday list.", error);
@@ -121,16 +153,57 @@ async function loadHolidays() {
   }
 }
 
+function selectYear(year, moveFocus = false) {
+  activeYear = year;
+  for (const tab of yearTabs) {
+    const selected = tab.id === `holiday-tab-${year}`;
+    tab.setAttribute("aria-selected", String(selected));
+    tab.tabIndex = selected ? 0 : -1;
+    if (selected && moveFocus) {
+      tab.focus();
+    }
+  }
+  for (const [tabYear, yearPanel] of Object.entries(yearPanels)) {
+    yearPanel.hidden = tabYear !== year;
+  }
+  toggle.textContent = `${panel.hidden ? "Show" : "Hide"} ${year} extracted school holidays`;
+}
+
+for (const tab of yearTabs) {
+  tab.addEventListener("click", () => {
+    selectYear(tab.id.slice("holiday-tab-".length));
+  });
+  tab.addEventListener("keydown", (event) => {
+    const currentIndex = yearTabs.indexOf(tab);
+    let nextIndex;
+    if (event.key === "ArrowRight") {
+      nextIndex = (currentIndex + 1) % yearTabs.length;
+    } else if (event.key === "ArrowLeft") {
+      nextIndex = (currentIndex - 1 + yearTabs.length) % yearTabs.length;
+    } else if (event.key === "Home") {
+      nextIndex = 0;
+    } else if (event.key === "End") {
+      nextIndex = yearTabs.length - 1;
+    }
+    if (nextIndex !== undefined) {
+      event.preventDefault();
+      selectYear(yearTabs[nextIndex].id.slice("holiday-tab-".length), true);
+    }
+  });
+}
+
 toggle.addEventListener("click", async () => {
   const show = toggle.getAttribute("aria-expanded") !== "true";
   toggle.setAttribute("aria-expanded", String(show));
-  toggle.textContent = show ? "Hide extracted school holidays" : "Show extracted school holidays";
   panel.hidden = !show;
+  selectYear(activeYear);
   if (show) {
-    if (!loadPromise) {
+    if (activeYear === "2026" && !loadPromise) {
       loadPromise = loadHolidays();
     }
-    await loadPromise;
+    if (activeYear === "2026") {
+      await loadPromise;
+    }
     if (status.textContent.startsWith("The holiday list could not be loaded.")) {
       loadPromise = undefined;
     }
