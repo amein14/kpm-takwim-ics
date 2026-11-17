@@ -1,0 +1,967 @@
+{
+  "schema_version": 1,
+  "status": "staging_only_unvalidated",
+  "generated_at": "2026-11-17T07:02:51.381154+00:00",
+  "documents": [
+    {
+      "academic_year": "2026",
+      "filename": "Kalendar-Akademik-2026.pdf",
+      "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+      "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+      "page_count": 3,
+      "extraction_status": "extracted_unvalidated",
+      "event_count": 54
+    },
+    {
+      "academic_year": "2027",
+      "filename": "Kalendar-Akademik-Tahun-2027.pdf",
+      "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%20Tahun%202027.pdf",
+      "sha256": "7d676a96fb1ca3c132cd066e8039d80d19a66c3a9891316ffd6b37d201395e03",
+      "page_count": 4,
+      "extraction_status": "pending_ocr",
+      "reason": "All pages are image-only; OCR is not configured for this extraction run."
+    }
+  ],
+  "events": [
+    {
+      "event_id": "79d380b062849e9bfbfe",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-01-11",
+      "end_date": "2026-01-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "11.01.2026 - 31.01.2026"
+      }
+    },
+    {
+      "event_id": "80ec901b2169d83b199e",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "12.01.2026 - 31.01.2026"
+      }
+    },
+    {
+      "event_id": "49a6138974a8ed9b44c9",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-02-01",
+      "end_date": "2026-02-28",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.02.2026 - 28.02.2026"
+      }
+    },
+    {
+      "event_id": "68616a67b0887bdd016b",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-02-01",
+      "end_date": "2026-02-28",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.02.2026 - 28.02.2026"
+      }
+    },
+    {
+      "event_id": "2ecfb2e41168037bcf22",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Tahun Baru Cina",
+      "group": "A",
+      "start_date": "2026-02-15",
+      "end_date": "2026-02-15",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN A",
+        "text": "15.02.2026"
+      }
+    },
+    {
+      "event_id": "866f887e138b11c7a93a",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Tahun Baru Cina",
+      "group": "A",
+      "start_date": "2026-02-16",
+      "end_date": "2026-02-16",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN A",
+        "text": "16.02.2026"
+      }
+    },
+    {
+      "event_id": "a05aeb0082c93d49138b",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Tahun Baru Cina",
+      "group": "B",
+      "start_date": "2026-02-16",
+      "end_date": "2026-02-16",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN B",
+        "text": "16.02.2026"
+      }
+    },
+    {
+      "event_id": "c096ccce8506acd92873",
+      "academic_year": "2026",
+      "kind": "festival_observance",
+      "title": "Tahun Baru Cina",
+      "group": null,
+      "start_date": "2026-02-17",
+      "end_date": "2026-02-17",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "CUTI PERAYAAN",
+        "text": "17.02.2026"
+      }
+    },
+    {
+      "event_id": "824be98db376823d8fa7",
+      "academic_year": "2026",
+      "kind": "festival_observance",
+      "title": "Tahun Baru Cina",
+      "group": null,
+      "start_date": "2026-02-18",
+      "end_date": "2026-02-18",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "CUTI PERAYAAN",
+        "text": "18.02.2026"
+      }
+    },
+    {
+      "event_id": "f403e8f824ccaddbccff",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Tahun Baru Cina",
+      "group": "A",
+      "start_date": "2026-02-19",
+      "end_date": "2026-02-19",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN A",
+        "text": "19.02.2026"
+      }
+    },
+    {
+      "event_id": "3d696cea0c85d1630fef",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Tahun Baru Cina",
+      "group": "B",
+      "start_date": "2026-02-19",
+      "end_date": "2026-02-19",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN B",
+        "text": "19.02.2026"
+      }
+    },
+    {
+      "event_id": "c46d9c9641496d5b2210",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Tahun Baru Cina",
+      "group": "B",
+      "start_date": "2026-02-20",
+      "end_date": "2026-02-20",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN B",
+        "text": "20.02.2026"
+      }
+    },
+    {
+      "event_id": "e3cdb61ba47f3e881ad1",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-19",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.03.2026 - 19.03.2026"
+      }
+    },
+    {
+      "event_id": "dd627257b5bd55b281df",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-20",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.03.2026 - 20.03.2026"
+      }
+    },
+    {
+      "event_id": "f2f068474e5abd6d358b",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Hari Raya Aidilfitri",
+      "group": "A",
+      "start_date": "2026-03-19",
+      "end_date": "2026-03-19",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN A",
+        "text": "19.03.2026"
+      }
+    },
+    {
+      "event_id": "ce788b679d94007fed18",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Hari Raya Aidilfitri",
+      "group": "B",
+      "start_date": "2026-03-19",
+      "end_date": "2026-03-19",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN B",
+        "text": "19.03.2026"
+      }
+    },
+    {
+      "event_id": "5c9a98bddc88a6dbcea0",
+      "academic_year": "2026",
+      "kind": "school_break",
+      "title": "CUTI PENGGAL 1, TAHUN 2026",
+      "group": "A",
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-28",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "CUTI PENGGAL 1, TAHUN 2026",
+        "text": "20.03.2026 - 28.03.2026"
+      }
+    },
+    {
+      "event_id": "fe8c266e542799713ce9",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Hari Raya Aidilfitri",
+      "group": "B",
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-20",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN B",
+        "text": "20.03.2026"
+      }
+    },
+    {
+      "event_id": "aafb91034d99ea8720ec",
+      "academic_year": "2026",
+      "kind": "festival_observance",
+      "title": "Hari Raya Aidilfitri",
+      "group": null,
+      "start_date": "2026-03-21",
+      "end_date": "2026-03-21",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "CUTI PERAYAAN",
+        "text": "21.03.2026"
+      }
+    },
+    {
+      "event_id": "a4a2c10f606d8618cf01",
+      "academic_year": "2026",
+      "kind": "school_break",
+      "title": "CUTI PENGGAL 1, TAHUN 2026",
+      "group": "B",
+      "start_date": "2026-03-21",
+      "end_date": "2026-03-29",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "CUTI PENGGAL 1, TAHUN 2026",
+        "text": "21.03.2026 - 29.03.2026"
+      }
+    },
+    {
+      "event_id": "239e715c640ebc1a0d9c",
+      "academic_year": "2026",
+      "kind": "festival_observance",
+      "title": "Hari Raya Aidilfitri",
+      "group": null,
+      "start_date": "2026-03-22",
+      "end_date": "2026-03-22",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "CUTI PERAYAAN",
+        "text": "22.03.2026"
+      }
+    },
+    {
+      "event_id": "bbdab50dfeb9b63c06af",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-03-29",
+      "end_date": "2026-03-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "29.03.2026 - 31.03.2026"
+      }
+    },
+    {
+      "event_id": "e6cea98580d02be24494",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-03-30",
+      "end_date": "2026-03-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "30.03.2026 - 31.03.2026"
+      }
+    },
+    {
+      "event_id": "4d3d191798c5bfb42f01",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-30",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.04.2026 - 30.04.2026"
+      }
+    },
+    {
+      "event_id": "098072c85d0ec917d243",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-30",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.04.2026 - 30.04.2026"
+      }
+    },
+    {
+      "event_id": "1fbbfbc1730244194f5d",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-05-01",
+      "end_date": "2026-05-21",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.05.2026 - 21.05.2026"
+      }
+    },
+    {
+      "event_id": "35e6a52379b92547b9a2",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-05-01",
+      "end_date": "2026-05-22",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.05.2026 - 22.05.2026"
+      }
+    },
+    {
+      "event_id": "6584c8a7594c9bddf978",
+      "academic_year": "2026",
+      "kind": "school_break",
+      "title": "CUTI PERTENGAHAN TAHUN 2026",
+      "group": "A",
+      "start_date": "2026-05-22",
+      "end_date": "2026-06-06",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "CUTI PERTENGAHAN TAHUN 2026",
+        "text": "22.05.2026 - 06.06.2026"
+      }
+    },
+    {
+      "event_id": "dab5881db6e1430b44b1",
+      "academic_year": "2026",
+      "kind": "school_break",
+      "title": "CUTI PERTENGAHAN TAHUN 2026",
+      "group": "B",
+      "start_date": "2026-05-23",
+      "end_date": "2026-06-07",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "CUTI PERTENGAHAN TAHUN 2026",
+        "text": "23.05.2026 - 07.06.2026"
+      }
+    },
+    {
+      "event_id": "39e2b4f15a8acc958fd0",
+      "academic_year": "2026",
+      "kind": "festival_observance",
+      "title": "Pesta Kaamatan",
+      "group": null,
+      "start_date": "2026-05-30",
+      "end_date": "2026-05-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "CATATAN / Pesta Kaamatan",
+        "text": "Pesta Kaamatan : 30 & 31 Mei 2026 (Dalam Cuti Pertengahan Tahun 2026)"
+      },
+      "states_included": [
+        "Sabah",
+        "Wilayah Persekutuan Labuan"
+      ],
+      "source_note": "Pesta Kaamatan : (Sabah dan Wilayah Persekutuan Labuan sahaja)"
+    },
+    {
+      "event_id": "9530f2ac340d4c7e1ed3",
+      "academic_year": "2026",
+      "kind": "festival_observance",
+      "title": "Perayaan Hari Gawai Dayak",
+      "group": null,
+      "start_date": "2026-06-01",
+      "end_date": "2026-06-02",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "CATATAN / Perayaan Hari Gawai Dayak",
+        "text": "Perayaan Hari Gawai Dayak : 01 & 02 Jun 2026 (Dalam Cuti Pertengahan Tahun 2026)"
+      },
+      "states_included": [
+        "Sarawak"
+      ],
+      "source_note": "Perayaan Hari Gawai Dayak : (Sarawak sahaja)"
+    },
+    {
+      "event_id": "af8c61de929be8efb4e0",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-06-07",
+      "end_date": "2026-06-30",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "07.06.2026 - 30.06.2026"
+      }
+    },
+    {
+      "event_id": "fc036a857bef521d234f",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-06-08",
+      "end_date": "2026-06-30",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "08.06.2026 - 30.06.2026"
+      }
+    },
+    {
+      "event_id": "148ceaec3ac9b12b453d",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.07.2026 - 31.07.2026"
+      }
+    },
+    {
+      "event_id": "fa7a8053d0975b12ece1",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.07.2026 - 31.07.2026"
+      }
+    },
+    {
+      "event_id": "1c3ba499edaecd31f49a",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-27",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.08.2026 - 27.08.2026"
+      }
+    },
+    {
+      "event_id": "7a8419b20b6da4e96e0f",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-28",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.08.2026 - 28.08.2026"
+      }
+    },
+    {
+      "event_id": "49e4c88a7c8622bb509e",
+      "academic_year": "2026",
+      "kind": "school_break",
+      "title": "CUTI PENGGAL 2, TAHUN 2026",
+      "group": "A",
+      "start_date": "2026-08-28",
+      "end_date": "2026-09-05",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "CUTI PENGGAL 2, TAHUN 2026",
+        "text": "28.08.2026 - 05.09.2026"
+      }
+    },
+    {
+      "event_id": "6b0a3085bd9cb2ee0dc2",
+      "academic_year": "2026",
+      "kind": "school_break",
+      "title": "CUTI PENGGAL 2, TAHUN 2026",
+      "group": "B",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-06",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "CUTI PENGGAL 2, TAHUN 2026",
+        "text": "29.08.2026 - 06.09.2026"
+      }
+    },
+    {
+      "event_id": "7b55f5fbb7f1b74e4bfb",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-30",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "06.09.2026 - 30.09.2026"
+      }
+    },
+    {
+      "event_id": "f17cc57e5fdf7e1c4ad8",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-09-07",
+      "end_date": "2026-09-30",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "07.09.2026 - 30.09.2026"
+      }
+    },
+    {
+      "event_id": "cc6635407c7f172fea0e",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.10.2026 - 31.10.2026"
+      }
+    },
+    {
+      "event_id": "4a62082a0c6f2661c821",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.10.2026 - 31.10.2026"
+      }
+    },
+    {
+      "event_id": "79a0fdee6bf4589f0b41",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-30",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.11.2026 - 30.11.2026"
+      }
+    },
+    {
+      "event_id": "cf898d57553ec53a2d1e",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-30",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.11.2026 - 30.11.2026"
+      }
+    },
+    {
+      "event_id": "7035b2cfd05314e83920",
+      "academic_year": "2026",
+      "kind": "festival_observance",
+      "title": "Hari Deepavali",
+      "group": null,
+      "start_date": "2026-11-08",
+      "end_date": "2026-11-08",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "CUTI PERAYAAN",
+        "text": "08.11.2026"
+      },
+      "states_excluded": [
+        "Sarawak"
+      ],
+      "source_note": "(Ahad) (kecuali Negeri Sarawak)"
+    },
+    {
+      "event_id": "3ef0995a9344bfc5185c",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Hari Deepavali",
+      "group": "A",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-09",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN A",
+        "text": "09.11.2026"
+      }
+    },
+    {
+      "event_id": "0f824ac46f44355638a9",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Hari Deepavali",
+      "group": "B",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-09",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN B",
+        "text": "09.11.2026"
+      },
+      "states_included": [
+        "Sarawak"
+      ],
+      "source_note": "(Isnin) Negeri Sarawak sahaja"
+    },
+    {
+      "event_id": "6b89438fe9cdac8a2d91",
+      "academic_year": "2026",
+      "kind": "additional_kpm_holiday",
+      "title": "Cuti tambahan KPM: Hari Deepavali",
+      "group": "B",
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-10",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "TAMBAHAN CUTI PERAYAAN / KUMPULAN B",
+        "text": "10.11.2026"
+      },
+      "states_excluded": [
+        "Sarawak"
+      ],
+      "source_note": "(Selasa) Semua Negeri Kumpulan B kecuali Negeri Sarawak"
+    },
+    {
+      "event_id": "98d7f6a7228c9fc31f90",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "A",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-03",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN A",
+        "text": "01.12.2026 - 03.12.2026"
+      }
+    },
+    {
+      "event_id": "355cda15f32b067e9b34",
+      "academic_year": "2026",
+      "kind": "schooling_period",
+      "title": "School period",
+      "group": "B",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-04",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "KALENDAR AKADEMIK TAHUN 2026 / KUMPULAN B",
+        "text": "01.12.2026 - 04.12.2026"
+      }
+    },
+    {
+      "event_id": "0abd460adf156096430e",
+      "academic_year": "2026",
+      "kind": "school_break",
+      "title": "CUTI AKHIR PERSEKOLAHAN TAHUN 2026",
+      "group": "A",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 1,
+        "section": "CUTI AKHIR PERSEKOLAHAN TAHUN 2026",
+        "text": "04.12.2026 - 31.12.2026"
+      }
+    },
+    {
+      "event_id": "7d550a01593195a92719",
+      "academic_year": "2026",
+      "kind": "school_break",
+      "title": "CUTI AKHIR PERSEKOLAHAN TAHUN 2026",
+      "group": "B",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-31",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 2,
+        "section": "CUTI AKHIR PERSEKOLAHAN TAHUN 2026",
+        "text": "05.12.2026 - 31.12.2026"
+      }
+    },
+    {
+      "event_id": "3a39109731fe95b81cd5",
+      "academic_year": "2026",
+      "kind": "festival_observance",
+      "title": "Perayaan Hari Krismas",
+      "group": null,
+      "start_date": "2026-12-25",
+      "end_date": "2026-12-25",
+      "source": {
+        "filename": "Kalendar-Akademik-2026.pdf",
+        "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+        "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+        "page_number": 3,
+        "section": "CATATAN / Perayaan Hari Krismas",
+        "text": "Perayaan Hari Krismas : 25 Disember 2026 (Dalam Cuti Akhir Persekolahan Tahun 2026)"
+      }
+    }
+  ],
+  "review_note": "Extracted values are unvalidated staging data. Do not copy them into data/events.json or publish them until Phase 3 review is complete."
+}

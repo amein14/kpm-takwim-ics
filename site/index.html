@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KPM School Calendar — ICS</title>
-  <meta name="description" content="Subscription calendar project based on publicly available KPM school-calendar publications.">
+  <meta name="description" content="Subscribe to Group A and Group B school calendar feeds based on official Malaysian Ministry of Education dates.">
+  <link rel="alternate" type="text/calendar" title="KPM Group A School Calendar" href="group-a.ics">
+  <link rel="alternate" type="text/calendar" title="KPM Group B School Calendar" href="group-b.ics">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,15 +14,23 @@
     <p class="eyebrow">Community calendar project</p>
     <h1>KPM School Calendar</h1>
     <p class="lead">Subscribe to Malaysia's school-calendar dates in your preferred calendar app.</p>
-    <section class="notice" aria-live="polite">
-      <strong>Under development</strong>
-      <p>Calendar feeds are not available yet. Dates will only be published after they have been checked against the official KPM source documents.</p>
+    <section class="notice" aria-labelledby="feed-heading">
+      <h2 id="feed-heading">Subscribe to a calendar</h2>
+      <p>Choose the KPM school group for the state where the school is located.</p>
+      <ul class="feeds">
+        <li>
+          <strong>Group A</strong> — Kedah, Kelantan and Terengganu.
+          <a href="group-a.ics">Subscribe or download the Group A feed</a>
+        </li>
+        <li>
+          <strong>Group B</strong> — Johor, Melaka, Negeri Sembilan, Pahang, Perak, Perlis,
+          Pulau Pinang, Sabah, Sarawak, Selangor and the Federal Territories.
+          <a href="group-b.ics">Subscribe or download the Group B feed</a>
+        </li>
+      </ul>
     </section>
-    <h2>Calendar feeds</h2>
-    <ul>
-      <li>Group A — coming soon</li>
-      <li>Group B — coming soon</li>
-    </ul>
+    <p>Feeds contain 2026 school periods, breaks and KPM holiday dates. Events are all-day informational entries and do not mark your calendar as busy.</p>
+    <p class="small">Some KPM dates have state-specific exceptions. Those entries are labeled in the feed; the Group B feed is not yet a state-specific calendar. The scanned 2027 document is not included pending OCR and review.</p>
     <h2>Official source</h2>
     <p><a href="https://www.moe.gov.my/kalendar-akademik-semasa" rel="noopener">KPM Kalendar Akademik Semasa</a></p>
     <p class="small">This is an independent project and is not an official KPM service. Always refer to KPM for authoritative dates.</p>

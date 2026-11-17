@@ -1,0 +1,6 @@
+data/discovered-documents.json
+data/source-pdfs/
+site/group-a.ics
+site/group-b.ics
+__pycache__/
+.pytest_cache/

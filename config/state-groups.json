@@ -1,13 +1,16 @@
 {
-  "description": "Verify this mapping against the applicable official KPM calendar before using it to publish state-specific feeds.",
+  "academic_year": "2026",
+  "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+  "source_sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+  "description": "State membership transcribed from the cited official 2026 KPM calendar. Group assignments may change by academic year.",
   "groups": {
     "A": [
-      "Johor",
       "Kedah",
       "Kelantan",
       "Terengganu"
     ],
     "B": [
+      "Johor",
       "Melaka",
       "Negeri Sembilan",
       "Pahang",

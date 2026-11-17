@@ -1,4 +1,186 @@
 {
   "schema_version": 1,
-  "documents": []
+  "last_checked": "2026-11-17T06:23:46.213217+00:00",
+  "documents": [
+    {
+      "academic_year": "2027",
+      "filename": "Kalendar-Akademik-Tahun-2027.pdf",
+      "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%20Tahun%202027.pdf",
+      "sha256": "7d676a96fb1ca3c132cd066e8039d80d19a66c3a9891316ffd6b37d201395e03",
+      "downloaded_at": "2026-11-17T06:17:11.238227+00:00",
+      "status": "unchanged",
+      "etag": "\"1228c7-65cdc3a4dc640\"",
+      "last_modified": "Fri, 02 Oct 2026 14:20:01 GMT"
+    },
+    {
+      "academic_year": "2026",
+      "filename": "Kalendar-Akademik-2026.pdf",
+      "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202026.pdf",
+      "sha256": "bea2dfb6fd91df64d3a6ac37a464d1ff165293b379651afc71d46e2ead697eb1",
+      "downloaded_at": "2026-11-17T06:17:11.292031+00:00",
+      "status": "unchanged",
+      "etag": "\"224d2-6426f8c3ee880\"",
+      "last_modified": "Fri, 31 Oct 2025 07:45:22 GMT"
+    },
+    {
+      "academic_year": "2025-2026",
+      "filename": "Kalendar-Akademik-2025_2026-Pindaan.pdf",
+      "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202025_2026%20%28Pindaan%29.pdf",
+      "sha256": "fcde1048401955c9a01830f4f4a299ca98d185c0dd56a7d2393b0461701f1fc6",
+      "downloaded_at": "2026-11-17T06:17:11.348701+00:00",
+      "status": "unchanged",
+      "etag": "\"c759-62ac3374c4ac0\"",
+      "last_modified": "Fri, 03 Jan 2025 01:29:55 GMT"
+    },
+    {
+      "academic_year": "2024-2025",
+      "filename": "Kalendar-Akademik-Tahun-2024-2025.pdf",
+      "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%20Tahun%202024%202025.pdf",
+      "sha256": "adada24b98ad39fd359084c35a6029df4175341f71693b0d44bacd162c15a02f",
+      "downloaded_at": "2026-11-17T06:17:11.458523+00:00",
+      "status": "unchanged",
+      "etag": "\"11dd6-611b6a880d740\"",
+      "last_modified": "Mon, 19 Feb 2024 07:01:09 GMT"
+    },
+    {
+      "academic_year": "2023-2024",
+      "filename": "Kalendar-Akademik-Tahun-2023-2024.pdf",
+      "source_url": "https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%20Tahun%202023%202024.pdf",
+      "sha256": "8c61b48e95f4c719f60411aaa7d6ab55a1b64b79d110a19e232d30f49327e0ae",
+      "downloaded_at": "2026-11-17T06:17:11.505938+00:00",
+      "status": "unchanged",
+      "etag": "\"1ee76-6063b5975e680\"",
+      "last_modified": "Tue, 26 Sep 2023 04:17:14 GMT"
+    },
+    {
+      "academic_year": "2022-2023",
+      "filename": "Kalendar-Akademik-Tahun-2022-2023.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vS2FsZW5kYXIgQWthZGVtaWsgVGFodW4gMjAyMiAyMDIzLnBkZg&download=1",
+      "sha256": "487606319b9d4348335c89856aa05e538e5cf12f4d7fa8b6a33af188f6109a84",
+      "downloaded_at": "2026-11-17T06:17:11.824185+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "117199"
+    },
+    {
+      "academic_year": null,
+      "filename": "LAMPIRAN-A-B-DAN-C.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vTEFNUElSQU4gQSwgQiBEQU4gQy5wZGY&download=1",
+      "sha256": "62922f59b7312e2ae35a4757100c1093c5cdf9340988a7a9cc8f03df933b2269",
+      "downloaded_at": "2026-11-17T06:17:12.081415+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "158896"
+    },
+    {
+      "academic_year": "2014",
+      "filename": "Takwim-Persekolahan-2014.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vVGFrd2ltIFBlcnNla29sYWhhbiAyMDE0LnBkZg&download=1",
+      "sha256": "6a527d9bf162a04b1fd624ec12c7704692a505c74166497dc90e32de80d078ba",
+      "downloaded_at": "2026-11-17T06:17:12.357564+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "528086"
+    },
+    {
+      "academic_year": "2016",
+      "filename": "Takwim-Persekolahan-2016.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vVGFrd2ltIFBlcnNla29sYWhhbiAyMDE2LnBkZg&download=1",
+      "sha256": "f0a55ee1860058cba8be464cac867a7326a9ef8af3b3339e549c6c3ff0e7cbc2",
+      "downloaded_at": "2026-11-17T06:17:12.666942+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "961199"
+    },
+    {
+      "academic_year": "2015",
+      "filename": "Takwim-Persekolahan-2015.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vVGFrd2ltIFBlcnNla29sYWhhbiAyMDE1LnBkZg&download=1",
+      "sha256": "f2c4bf67f983051363c726baba43b8e8c37b6e3e33309cbd312b51fe8a62e91a",
+      "downloaded_at": "2026-11-17T06:17:12.891959+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "57214"
+    },
+    {
+      "academic_year": "2017",
+      "filename": "Takwim-Persekolahan-2017.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vVGFrd2ltIFBlcnNla29sYWhhbiAyMDE3LnBkZg&download=1",
+      "sha256": "cc4afa1f222818e88aa0af66199d0c39804ca30303ee26c61b39248466f19cda",
+      "downloaded_at": "2026-11-17T06:17:13.170878+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "159020"
+    },
+    {
+      "academic_year": null,
+      "filename": "TAKWIM_AKADEMIK_PROGRAM_PRAUNIVERSITI_KPM.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vVEFLV0lNX0FLQURFTUlLX1BST0dSQU1fUFJBVU5JVkVSU0lUSV9LUE0ucGRm&download=1",
+      "sha256": "096388309b3f63e6e6fa5f1982b92eb1674503fbe69010e52a9e676a51514560",
+      "downloaded_at": "2026-11-17T06:17:13.484157+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "476399"
+    },
+    {
+      "academic_year": "2020",
+      "filename": "Jadual_Takwim_2020.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vSmFkdWFsX1Rha3dpbV8yMDIwLnBkZg&download=1",
+      "sha256": "f8390c89346a01179b91174de8226d925f921256e4e6ce0b52736d0126b3106e",
+      "downloaded_at": "2026-11-17T06:17:13.772175+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "221124"
+    },
+    {
+      "academic_year": "2018",
+      "filename": "Takwim-Persekolahan-2018.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vVGFrd2ltIFBlcnNla29sYWhhbiAyMDE4LnBkZg&download=1",
+      "sha256": "4ff0dcdacfd756828ec2bd11e15dedc2ef0bc33b100aa64dea7868667a2e70f2",
+      "downloaded_at": "2026-11-17T06:17:14.014926+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "221154"
+    },
+    {
+      "academic_year": "2025-2026",
+      "filename": "Kalendar-Akademik-2025-2026.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vS2FsZW5kYXIgQWthZGVtaWsgMjAyNSAyMDI2LnBkZg&download=1",
+      "sha256": "5b9cefc7dbab9778dd8a56cf4dd5105a85bb83364221ba3df083f6fc110ecae0",
+      "downloaded_at": "2026-11-17T06:17:14.344507+00:00",
+      "status": "unchanged",
+      "last_modified": "Sat, 05 Oct 2024 12:04:12 GMT",
+      "content_length": "998969"
+    },
+    {
+      "academic_year": "2021",
+      "filename": "LAMPIRAN-A-B-DAN-C-TAKWIM-PENGGAL-DAN-CUTI-PERSEKOLAHAN-TAHUN-2021.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vTEFNUElSQU4gQSwgQiBEQU4gQyBUQUtXSU0gUEVOR0dBTCBEQU4gQ1VUSSBQRVJTRUtPTEFIQU4gVEFIVU4gMjAyMS5wZGY&download=1",
+      "sha256": "3643595674abb990bab4c26de131465ef1c141393e1dda1c4c1deb2866986a92",
+      "downloaded_at": "2026-11-17T06:17:14.608268+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "161713"
+    },
+    {
+      "academic_year": "2020",
+      "filename": "SURAT-SIARAN-KPM-BILANGAN-8-TAHUN-2020-TAKWIM-PENGGAL-DN-CUTI-PERSEKOLAHAN-TAHUN-2021.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vU1VSQVQgU0lBUkFOIEtQTSBCSUxBTkdBTiA4IFRBSFVOIDIwMjAgVEFLV0lNIFBFTkdHQUwgRE4gQ1VUSSBQRVJTRUtPTEFIQU4gVEFIVU4gMjAyMS5wZGY&download=1",
+      "sha256": "eb2c5c996077a6d43b1414599f1954e4590f19c8e749818cd3990d93bd916fd6",
+      "downloaded_at": "2026-11-17T06:17:15.021117+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "232441"
+    },
+    {
+      "academic_year": "2019",
+      "filename": "Takwim-Persekolahan-2019.pdf",
+      "source_url": "https://www.moe.gov.my/muatturun/connector?cmd=file&target=l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4vVGFrd2ltIFBlcnNla29sYWhhbiAyMDE5LnBkZg&download=1",
+      "sha256": "566babf2da0599717a0a9530cd032b5cbf224c77a842ac157afea06e7a7d9c86",
+      "downloaded_at": "2026-11-17T06:17:15.284902+00:00",
+      "status": "unchanged",
+      "last_modified": "Fri, 09 Jun 2023 04:12:28 GMT",
+      "content_length": "242360"
+    }
+  ]
 }

@@ -10,10 +10,16 @@ def test_source_configuration_is_valid():
     assert all(item["url"].startswith("https://") for item in data["sources"])
 
 
-def test_events_start_empty_and_unpublished():
+def test_events_are_validated_and_provenanced():
     data = json.loads((ROOT / "data" / "events.json").read_text(encoding="utf-8"))
-    assert data["status"] == "empty"
-    assert data["events"] == []
+    assert data["status"] == "validated"
+    assert data["validation"]["status"] == "verified"
+    assert data["validation"]["event_count"] == 54
+    assert data["events"]
+    assert all(
+        event["source"]["sha256"] == data["validation"]["source_sha256"]
+        for event in data["events"]
+    )
 
 
 def test_pages_placeholder_exists():

@@ -5,14 +5,14 @@
       "url": "https://www.moe.gov.my/muatturun#elf_l1_VGFrd2ltL1Rha3dpbSBQZXJzZWtvbGFoYW4",
       "type": "public_download_folder",
       "enabled": true,
-      "notes": "Public-facing folder page. Connector discovery/download implementation is not yet configured."
+      "notes": "Public-facing elFinder folder. The connector is anonymously accessible; its URL and page-provided anti-CSRF value are read at runtime."
     },
     {
       "name": "KPM Kalendar Akademik",
       "url": "https://www.moe.gov.my/kalendar-akademik-semasa",
       "type": "public_listing",
       "enabled": true,
-      "notes": "Use as a discovery/reference page; verify the current page structure before automating."
+      "notes": "Public calendar listing. PDF links and academic years are discovered from the current page."
     }
   ]
 }
