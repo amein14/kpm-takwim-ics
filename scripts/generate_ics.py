@@ -271,7 +271,7 @@ def build_holiday_listing(
     approved: dict[str, Any],
     state_groups: dict[str, Any],
 ) -> dict[str, Any]:
-    events, _ = _validate_inputs(approved, state_groups)
+    events, groups = _validate_inputs(approved, state_groups)
     holidays = [
         {
             "event_id": event["event_id"],
@@ -282,6 +282,11 @@ def build_holiday_listing(
             "group": event.get("group"),
             "states_included": event.get("states_included", []),
             "states_excluded": event.get("states_excluded", []),
+            "applicable_groups": [
+                group
+                for group in ("A", "B")
+                if _applies_to_group(event, group, groups[group])
+            ],
             "source_note": event.get("source_note"),
             "source_url": event["source"]["source_url"],
             "page_number": event["source"]["page_number"],

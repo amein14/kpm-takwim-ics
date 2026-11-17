@@ -75,6 +75,15 @@ def feed_inputs():
             states_included=["Sabah"],
         ),
         _event(
+            "gawai",
+            "festival_observance",
+            "Perayaan Hari Gawai Dayak",
+            None,
+            "2026-06-01",
+            "2026-06-02",
+            states_included=["Sarawak"],
+        ),
+        _event(
             "deepavali",
             "festival_observance",
             "Hari Deepavali",
@@ -130,11 +139,13 @@ def test_group_feeds_keep_state_exceptions_and_merge_school_rows(feed_inputs):
     assert term_a["transp"] == "TRANSPARENT"
     assert any("Cuti KPM (Group A)" in summary for summary in summaries_a)
     assert not any("Pesta Kaamatan" in summary for summary in summaries_a)
+    assert not any("Hari Gawai Dayak" in summary for summary in summaries_a)
     assert any("Hari Deepavali (excluding Sarawak)" in summary for summary in summaries_a)
 
     assert any("Deepavali (Group B) (Sarawak only)" in summary for summary in summaries_b)
     assert any("Deepavali (Group B) (excluding Sarawak)" in summary for summary in summaries_b)
     assert any("Pesta Kaamatan (Sabah only)" in summary for summary in summaries_b)
+    assert any("Hari Gawai Dayak (Sarawak only)" in summary for summary in summaries_b)
     assert any("Christmas" in summary for summary in summaries_a)
     assert any("Christmas" in summary for summary in summaries_b)
     assert len({str(event["uid"]) for event in group_a}) == len(group_a)
@@ -163,12 +174,18 @@ def test_holiday_list_contains_breaks_and_holidays_but_not_school_periods(feed_i
     listing = build_holiday_listing(approved, state_groups)
 
     assert listing["status"] == "validated"
-    assert len(listing["events"]) == 8
+    assert len(listing["events"]) == 9
     assert "schooling_period" not in {event["kind"] for event in listing["events"]}
     assert {"school_break", "additional_kpm_holiday", "festival_observance"} == {
         event["kind"] for event in listing["events"]
     }
     assert all(event["source_url"] == SOURCE_URL for event in listing["events"])
+    kaamatan = next(event for event in listing["events"] if event["title"] == "Pesta Kaamatan")
+    gawai = next(event for event in listing["events"] if event["title"] == "Perayaan Hari Gawai Dayak")
+    christmas = next(event for event in listing["events"] if event["title"] == "Christmas")
+    assert kaamatan["applicable_groups"] == ["B"]
+    assert gawai["applicable_groups"] == ["B"]
+    assert christmas["applicable_groups"] == ["A", "B"]
 
 
 def test_generator_writes_holiday_list_for_the_pages_build(feed_inputs, tmp_path):
@@ -191,6 +208,6 @@ def test_generator_writes_holiday_list_for_the_pages_build(feed_inputs, tmp_path
     ) == 0
     listing = json.loads((output_dir / "school-holidays.json").read_text(encoding="utf-8"))
     assert listing["status"] == "validated"
-    assert len(listing["events"]) == 8
+    assert len(listing["events"]) == 9
     assert (output_dir / "group-a.ics").is_file()
     assert (output_dir / "group-b.ics").is_file()

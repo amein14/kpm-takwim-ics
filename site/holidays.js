@@ -27,7 +27,11 @@ function formatDate(value) {
 
 function applicability(event) {
   const scopes = [];
-  scopes.push(event.group ? `Group ${event.group}` : "Groups A and B");
+  scopes.push(
+    event.applicable_groups.length === 2
+      ? "Groups A and B"
+      : `Group ${event.applicable_groups.join(" and ")}`,
+  );
   if (event.states_included.length) {
     scopes.push(`${event.states_included.join(", ")} only`);
   }
@@ -43,6 +47,8 @@ function renderHoliday(event) {
     || !kindLabels[event.kind]
     || typeof event.start_date !== "string"
     || typeof event.end_date !== "string"
+    || !Array.isArray(event.applicable_groups)
+    || event.applicable_groups.length === 0
     || !Array.isArray(event.states_included)
     || !Array.isArray(event.states_excluded)
   ) {
