@@ -7,6 +7,7 @@
   <meta name="description" content="Subscribe to Group A and Group B school calendar feeds based on official Malaysian Ministry of Education dates.">
   <link rel="alternate" type="text/calendar" title="KPM Group A School Calendar" href="group-a.ics">
   <link rel="alternate" type="text/calendar" title="KPM Group B School Calendar" href="group-b.ics">
+  <script src="holidays.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,6 +31,15 @@
       </ul>
     </section>
     <p>Feeds contain 2026 school periods, breaks and KPM holiday dates. Events are all-day informational entries and do not mark your calendar as busy.</p>
+    <section class="holiday-section" aria-labelledby="holiday-heading">
+      <h2 id="holiday-heading">Extracted school holidays</h2>
+      <p>View the validated 2026 school breaks, additional KPM holidays and festival dates.</p>
+      <button id="holiday-toggle" type="button" aria-expanded="false" aria-controls="holiday-list">Show extracted school holidays</button>
+      <div id="holiday-list" hidden>
+        <p id="holiday-status" class="small" role="status" aria-live="polite"></p>
+        <div id="holiday-items"></div>
+      </div>
+    </section>
     <p class="small">Some KPM dates have state-specific exceptions. Those entries are labeled in the feed; the Group B feed is not yet a state-specific calendar. The scanned 2027 document is not included pending OCR and review.</p>
     <h2>Official source</h2>
     <p><a href="https://www.moe.gov.my/kalendar-akademik-semasa" rel="noopener">KPM Kalendar Akademik Semasa</a></p>

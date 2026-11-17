@@ -2,5 +2,6 @@ data/discovered-documents.json
 data/source-pdfs/
 site/group-a.ics
 site/group-b.ics
+site/school-holidays.json
 __pycache__/
 .pytest_cache/

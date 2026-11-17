@@ -19,7 +19,9 @@ from scripts.discover import ROOT
 DEFAULT_EVENTS = ROOT / "data" / "events.json"
 DEFAULT_STATE_GROUPS = ROOT / "config" / "state-groups.json"
 DEFAULT_OUTPUT_DIR = ROOT / "site"
+DEFAULT_HOLIDAY_LIST = ROOT / "site" / "school-holidays.json"
 CALENDAR_DOMAIN = "amein14.github.io"
+HOLIDAY_KINDS = {"school_break", "additional_kpm_holiday", "festival_observance"}
 
 
 class FeedError(RuntimeError):
@@ -265,6 +267,37 @@ def generate_feeds(
     }
 
 
+def build_holiday_listing(
+    approved: dict[str, Any],
+    state_groups: dict[str, Any],
+) -> dict[str, Any]:
+    events, _ = _validate_inputs(approved, state_groups)
+    holidays = [
+        {
+            "event_id": event["event_id"],
+            "kind": event["kind"],
+            "title": event["title"],
+            "start_date": event["start_date"],
+            "end_date": event["end_date"],
+            "group": event.get("group"),
+            "states_included": event.get("states_included", []),
+            "states_excluded": event.get("states_excluded", []),
+            "source_note": event.get("source_note"),
+            "source_url": event["source"]["source_url"],
+            "page_number": event["source"]["page_number"],
+        }
+        for event in events
+        if event["kind"] in HOLIDAY_KINDS
+    ]
+    return {
+        "schema_version": 1,
+        "status": "validated",
+        "academic_year": approved["academic_year"],
+        "source_sha256": approved["validation"]["source_sha256"],
+        "events": holidays,
+    }
+
+
 def _write_feed(path: Path, content: bytes) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path: Path | None = None
@@ -284,22 +317,50 @@ def _write_feed(path: Path, content: bytes) -> None:
             temporary_path.unlink()
 
 
+def _write_json(path: Path, value: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix=f".{path.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as file:
+            json.dump(value, file, ensure_ascii=False, indent=2)
+            file.write("\n")
+            temporary_path = Path(file.name)
+        temporary_path.replace(path)
+    finally:
+        if temporary_path is not None and temporary_path.exists():
+            temporary_path.unlink()
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--events", type=Path, default=DEFAULT_EVENTS)
     parser.add_argument("--state-groups", type=Path, default=DEFAULT_STATE_GROUPS)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    parser.add_argument("--holiday-list", type=Path, default=None)
     args = parser.parse_args(argv)
     try:
         approved = _read_json(args.events, "approved events")
         state_groups = _read_json(args.state_groups, "state-group mapping")
         feeds = generate_feeds(approved, state_groups)
+        holiday_listing = build_holiday_listing(approved, state_groups)
         for group, content in feeds.items():
             _write_feed(args.output_dir / f"group-{group.lower()}.ics", content)
+        holiday_list_path = args.holiday_list or args.output_dir / DEFAULT_HOLIDAY_LIST.name
+        _write_json(holiday_list_path, holiday_listing)
     except (FeedError, OSError) as exc:
         print(f"ICS generation failed: {exc}", file=sys.stderr)
         return 1
-    print(f"Generated {len(feeds)} validated Group A/B feed(s) in {args.output_dir}.")
+    print(
+        f"Generated {len(feeds)} validated Group A/B feed(s) and "
+        f"{len(holiday_listing['events'])} holiday list item(s)."
+    )
     return 0
 
 

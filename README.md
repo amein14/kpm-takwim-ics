@@ -4,7 +4,7 @@ A community project to convert publicly available Kementerian Pendidikan Malaysi
 
 ## Project status
 
-**Phases 3–5 — 2026 validation, ICS generation and Pages publication.** The 2026 calendar has been checked against the official KPM PDF. Group A and Group B feeds are generated during the GitHub Pages deployment. The scanned 2027 calendar remains pending OCR and is not included.
+**Phases 3–5 — 2026 validation, ICS generation and Pages publication.** The 2026 calendar has been checked against the official KPM PDF. Group A and Group B feeds and a toggleable school-holiday list are generated during the GitHub Pages deployment. The scanned 2027 calendar remains pending OCR and is not included.
 
 ## Planned features
 
@@ -124,14 +124,17 @@ or source checksum differs from the validation record. It creates
 `site/group-a.ics` and `site/group-b.ics`; continuous monthly school-period
 rows are merged into term spans. All-day event end dates follow iCalendar's
 exclusive-end convention, stable UIDs are used, and state-specific exceptions
-are described in the events.
+are described in the events. The build also creates `school-holidays.json`
+from validated school breaks, additional KPM holidays and festival dates; it
+does not include schooling periods.
 
 ## Phase 5: publish verified feeds
 
 Push the approved event data, feed generator and site changes to `main`. The
 **Deploy GitHub Pages** workflow runs the test suite, generates the feeds into
-the Pages build artifact, and deploys the site. The feed links appear on the
-homepage after the deployment succeeds. The workflow never republishes
+the Pages build artifact, and deploys the site. The homepage's Show/Hide
+control loads the generated holiday list only when opened. Feed links and the
+list are available after deployment succeeds. The workflow never republishes
 unvalidated staging data.
 
 ## GitHub setup

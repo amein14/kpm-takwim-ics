@@ -56,10 +56,13 @@ python -m scripts.generate_ics --output-dir site
 
 Only validated data is accepted. School-period month rows are combined into
 continuous term spans, while breaks and holiday exceptions remain individual
-all-day events with KPM source links and stable UIDs.
+all-day events with KPM source links and stable UIDs. It also writes
+`school-holidays.json`, containing only validated breaks and holiday dates for
+the homepage's toggleable list.
 
 ## Phase 5 GitHub Pages publication
 
 The Deploy GitHub Pages workflow runs the test suite, generates the two feeds,
-and deploys them with the static site. The generated `.ics` files are build
-outputs and are not committed to the repository.
+generates the holiday-list data asset, and deploys them with the static site.
+The generated `.ics` and `.json` files are build outputs and are not committed
+to the repository.
