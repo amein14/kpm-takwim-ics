@@ -34,24 +34,22 @@
     <section class="holiday-section" aria-labelledby="holiday-heading">
       <h2 id="holiday-heading">Extracted school holidays</h2>
       <p>View the validated school breaks, additional KPM holidays and festival dates.</p>
-      <div class="holiday-year">
+      <div class="holiday-controls">
         <button id="holiday-toggle-2026" type="button" aria-expanded="false" aria-controls="holiday-panel-2026">Show 2026 school holidays</button>
-        <section id="holiday-panel-2026" class="holiday-year-panel" aria-labelledby="holiday-toggle-2026" hidden>
-          <fieldset class="holiday-filter">
-            <legend>Show holidays for</legend>
-            <label><input type="radio" name="holiday-group" value="A" checked> Group A</label>
-            <label><input type="radio" name="holiday-group" value="B"> Group B</label>
-          </fieldset>
-          <p id="holiday-status" class="small" role="status" aria-live="polite"></p>
-          <div id="holiday-items"></div>
-        </section>
-      </div>
-      <div class="holiday-year">
         <button id="holiday-toggle-2027" type="button" aria-expanded="false" aria-controls="holiday-panel-2027">Show 2027 school holidays</button>
-        <section id="holiday-panel-2027" class="holiday-year-panel" aria-labelledby="holiday-toggle-2027" hidden>
-          <p>Pending</p>
-        </section>
       </div>
+      <section id="holiday-panel-2026" class="holiday-year-panel" aria-labelledby="holiday-toggle-2026" hidden>
+        <fieldset class="holiday-filter">
+          <legend>Show holidays for</legend>
+          <label><input type="radio" name="holiday-group" value="A" checked> Group A</label>
+          <label><input type="radio" name="holiday-group" value="B"> Group B</label>
+        </fieldset>
+        <p id="holiday-status" class="small" role="status" aria-live="polite"></p>
+        <div id="holiday-items"></div>
+      </section>
+      <section id="holiday-panel-2027" class="holiday-year-panel" aria-labelledby="holiday-toggle-2027" hidden>
+        <p>Pending</p>
+      </section>
     </section>
     <p class="small">Some KPM dates have state-specific exceptions. Those entries are labeled in the feed; the Group B feed is not yet a state-specific calendar. The scanned 2027 document is not included pending OCR and review.</p>
     <h2>Official source</h2>
