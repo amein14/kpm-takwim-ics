@@ -1,0 +1,25 @@
+{
+  "description": "Verify this mapping against the applicable official KPM calendar before using it to publish state-specific feeds.",
+  "groups": {
+    "A": [
+      "Johor",
+      "Kedah",
+      "Kelantan",
+      "Terengganu"
+    ],
+    "B": [
+      "Melaka",
+      "Negeri Sembilan",
+      "Pahang",
+      "Perak",
+      "Perlis",
+      "Pulau Pinang",
+      "Sabah",
+      "Sarawak",
+      "Selangor",
+      "Wilayah Persekutuan Kuala Lumpur",
+      "Wilayah Persekutuan Labuan",
+      "Wilayah Persekutuan Putrajaya"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+icalendar>=6.1,<7
+PyMuPDF>=1.25,<2
+pytest>=8.3,<9
+requests>=2.32,<3

@@ -1,0 +1,9 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; line-height: 1.6; }
+main { max-width: 760px; margin: 0 auto; padding: 3rem 1.25rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; opacity: .7; }
+h1 { line-height: 1.15; font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: .5rem; }
+.lead { font-size: 1.15rem; opacity: .8; }
+.notice { border: 1px solid currentColor; border-radius: .75rem; padding: 1rem 1.25rem; margin: 2rem 0; }
+.small { font-size: .9rem; opacity: .7; margin-top: 3rem; }
+a { text-underline-offset: .2em; }
